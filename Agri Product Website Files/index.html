@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="mr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JSM Crops</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <!-- NEW LOGO IMAGE -->
+      <img src="jsm_logo.png" class="main-logo" alt="JSM Logo">
+
+      <div>
+        <div style="font-weight:900">JSM Crops</div>
+        <div style="font-size:12px;color:var(--muted)">Premium Agricultural Bio-Stimulant — India</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero-card hero">
+      <div>
+        <div class="eyebrow"> Premium Products</div>
+        <h1>High-quality bio-stimulant for Grapes and Chilli crops</h1>
+        <p class="lead">Better shoot growth, enhanced fruiting and improved crop performance.</p>
+        <div class="filters" id="filters"></div>
+      </div>
+
+      <aside style="padding:10px;display:flex;flex-direction:column;gap:10px">
+        
+
+        <div class="contact-box">
+          <strong>Contact</strong>
+          <p style="margin:6px 0 0;color:var(--muted);font-size:13px">
+            WhatsApp: <a class="inline" href="tel:+919000000000">+91 90000 00000</a>
+          </p>
+        </div>
+      </aside>
+    </section>
+    
+    <section class="header-bg">
+    </section>
+
+
+    <section id="products">
+      <h2 style="margin:18px 0 8px">Products</h2>
+      <div class="grid" id="productGrid"></div>
+
+      <div class="detail" id="productDetail">
+        <button class="btn-outline" id="backBtn">← Back to products</button>
+
+        <div class="detail-grid" style="margin-top:12px">
+          <div><img src="" class="big-img" id="detailImg"></div>
+
+          <div class="info">
+            <h2 id="detailTitle"></h2>
+            <div class="price" id="detailPrice"></div>
+            <p style="color:var(--muted);margin-top:8px" id="detailDesc"></p>
+            <div class="specs" id="detailSpecs"></div>
+
+            <h3 style="margin-top:16px">Composition</h3>
+            <ul class="comp-list">
+              <li>Amino acids from enzymatic hydrolysis – 2%</li>
+              <li>Methyl lactate / similar ester – 0.8%</li>
+              <li>Water (Total) – 100%</li>
+            </ul>
+
+            <h3 style="margin-top:16px">Specifications</h3>
+            <table class="spec-table">
+              <tr><td><strong>Free amino acids</strong></td><td>0.8 – 1.02%</td></tr>
+              <tr><td><strong>Total organic carbon</strong></td><td>1%</td></tr>
+              <tr><td><strong>Specific gravity</strong></td><td>1.02 ± 0.02</td></tr>
+              <tr><td><strong>pH (1% solution)</strong></td><td>6 – 7</td></tr>
+              <tr><td><strong>Solubility</strong></td><td>100%</td></tr>
+            </table>
+
+            <h3 style="margin-top:16px">Dosage</h3>
+            <p class="dosage"><strong>Grapes:</strong> Four foliar sprays at 0.25–2.00 L/ha.</p>
+            <p class="dosage"><strong>Chilli:</strong> Three foliar applications at 0.75 L/ha.</p>
+
+            <div class="actions">
+              <button class="btn-primary" id="orderBtn">Order</button>
+              <button class="btn-outline" id="enquiryBtn">Enquire</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:22px">
+      <h2>About Me</h2>
+      <p style="color:var(--muted);max-width:780px">We are local farmers....</p>
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <h2>Contact</h2>
+      <form class="contact-form">
+        <input placeholder="Name" />
+        <input placeholder="Phone" />
+        <textarea rows="4" placeholder="Message"></textarea>
+      </form>
+    </section>
+
+    <footer>© Om Mushroom</footer>
+  </main>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
